@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">Калькулятор</div>
+    <div id="app" class="calculator">
+        <div class="calculator__inputs">
+            <input type="number" id="first_number" class="calculator__input">
+            <input type="number" id="second_number" class="calculator__input">
+        </div>
+        <div class="calculator__btns">
+            <button class="calculator__btn" id="plus" data-sign="+">+</button>
+            <button class="calculator__btn" id="minus" data-sign="-">-</button>
+            <button class="calculator__btn" id="multiply" data-sign="*">*</button>
+            <button class="calculator__btn" id="division" data-sign="/">/</button>
+        </div>
+        <div class="calculator__result">
+            0
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
