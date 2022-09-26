@@ -1,3 +1,7 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -11,8 +15,9 @@ body {
     font-size: 72px;
     font-weight: bold;
     color: #f7f7f7;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     text-shadow: 0 0 30px #ffffff3f;
+    margin-top: -200px;
 }
 
 .calculator {
@@ -61,6 +66,11 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 20px #ffffff3f;
+    transition: .3s;
+}
+
+.calculator__btn:hover {
+    transform: scale(1.1);
 }
 
 .calculator__result {
