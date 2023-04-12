@@ -4,15 +4,9 @@ const secondNumber = document.getElementById('second_number');
 firstNumber.value = 0;
 secondNumber.value = 0;
 
-const btns = document.querySelectorAll('.calculator__btn');
-const resultContainer = document.querySelector('.calculator__result');
+const btns = document.querySelectorAll('.calculator_btn');
+const resultContainer = document.querySelector('.calculator_result');
 
-
-for (i = 0; i < btns.length; ++i) {
-    btns[i].addEventListener('click', function (e) {
-        const sign = e.target.dataset['sign'];
-        let first = Number(firstNumber.value);
-        let second = Number(secondNumber.value);
-        resultContainer.innerHTML = calculate(first, second, sign);
-    });
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', clickHandler);
 }
