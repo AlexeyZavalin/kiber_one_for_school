@@ -22,4 +22,12 @@ function calculate(firstNumber, secondNumber, operator) {
         }
     }
     return result;
+
+}
+
+function clickHandler(e) {
+    const sign = e.target.dataset['operator'];
+    let first = Number(firstNumber.value);
+    let second = Number(secondNumber.value);
+    resultContainer.innerHTML = calculate(first, second, sign);
 }

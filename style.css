@@ -32,13 +32,13 @@ body {
     justify-content: space-between;
 }
 
-.calculator__inputs {
+.calculator_inputs {
     display: flex;
     justify-content: space-around;
     margin-bottom: 25px;
 }
 
-.calculator__input {
+.calculator_input {
     width: 100px;
     height: 30px;
     padding: 10px;
@@ -46,13 +46,13 @@ body {
     border: none;
 }
 
-.calculator__btns {
+.calculator_btns {
     display: flex;
     justify-content: space-around;
     margin-bottom: 25px;
 }
 
-.calculator__btn {
+.calculator_btn {
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -73,7 +73,7 @@ body {
     transform: scale(1.1);
 }
 
-.calculator__result {
+.calculator_result {
     display: flex;
     justify-content: center;
     font-size: 2rem;
